@@ -126,7 +126,7 @@ h1 {
   width: 10rem;
   border: none;
   padding: 0.5rem;
-  animation: pulse-text 2s infinite;
+  animation: pulse-text 1s infinite;
   background-color: #46432f;
   text-align: center;
   text-transform: uppercase;

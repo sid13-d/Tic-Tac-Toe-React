@@ -6,12 +6,12 @@ export default function Player({name, symbol}) {
     const [playerName, setPlayerName] = useState(false);
 
     //this is where we decide which elemtn to set input or span
-    const nameElement = playerName ? <input type="text" /> : <span className="player-name">{name}</span>;
+    const nameElement = playerName ? <input type="text" required value={name}/> : <span className="player-name">{name}</span>;
     const buttonType = playerName ? <FaCheckDouble /> : <FaEdit />;
     
-
+//best practice to update a state based on previous state value
     function handleEditing() {
-        setPlayerName(!playerName);
+        setPlayerName((editing) => !editing);
         
     }
 
